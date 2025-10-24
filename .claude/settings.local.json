@@ -3,7 +3,11 @@
     "allow": [
       "Bash(mkdir:*)",
       "Bash(julia -e:*)",
-      "Skill(julia-hydrotools)"
+      "Bash(Rscript:*)",
+      "Bash(Rscript -e:*)",
+      "Skill(julia-hydrotools)",
+      "Skill(r-expert)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
