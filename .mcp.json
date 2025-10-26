@@ -1,5 +1,23 @@
 {
   "mcpServers": {
+    "github.com/modelcontextprotocol/servers/tree/main/src/filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\hydro\\Desktop",
+        "D:\\Documents",
+        "F:\\github"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    },
+    "claude-skills": {
+      "command": "uvx",
+      "args": [
+        "claude-skills-mcp"
+      ]
+    },
     "Typst MCP Server": {
       "command": "uv",
       "args": [
@@ -7,6 +25,10 @@
         "Z:\\GitHub\\kongdd\\typst-mcp\\",
         "run",
         "server.py"
+      ],
+      "autoApprove": [
+        "latex_snippet_to_typst",
+        "latex_snippets_to_typst"
       ]
     },
     "julia-HelloWorld": {
