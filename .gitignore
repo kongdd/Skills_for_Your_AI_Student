@@ -1,3 +1,5 @@
 *.csv
 lib
 scripts
+
+inst

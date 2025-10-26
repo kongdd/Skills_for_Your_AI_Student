@@ -75,3 +75,5 @@
 - 民间Skills：<https://github.com/K-Dense-AI/claude-scientific-skills>
 
 - 武装其他模型Skills：<https://github.com/K-Dense-AI/claude-skills-mcp>
+
+- 标准化开发流程：<https://github.com/github/spec-kit>
