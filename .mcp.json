@@ -4,7 +4,7 @@
       "command": "uv",
       "args": [
         "--directory",
-        "D:\\GitHub\\kongdd\\typst-mcp\\",
+        "Z:\\GitHub\\kongdd\\typst-mcp\\",
         "run",
         "server.py"
       ]
@@ -12,7 +12,11 @@
     "julia-HelloWorld": {
       "command": "julia",
       "args": [
-        "C:/Users/kongdd/GitHub/kongdd/AI-skills/mcp/julia-mcp.jl"
+        "--project=Z:/GitHub/kongdd/Skills_for_Your_AI_Student/mcp",
+        "Z:/GitHub/kongdd/Skills_for_Your_AI_Student/mcp/julia-mcp.jl"
+      ],
+      "autoApprove": [
+        "get_time"
       ]
     }
   }

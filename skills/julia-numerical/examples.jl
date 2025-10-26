@@ -37,6 +37,7 @@ function linear_algebra_examples()
     println("Frobenius norm: ", norm(A))
 end
 
+
 # ============================================================================
 # Numerical Integration Examples
 # ============================================================================

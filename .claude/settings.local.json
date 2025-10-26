@@ -8,11 +8,13 @@
       "Skill(julia-hydrotools)",
       "Skill(r-expert)",
       "WebSearch",
-      "mcp__julia-HelloWorld__get_time"
+      "mcp__julia-HelloWorld__get_time",
+      "mcp__Typst_MCP_Server__check_if_snippet_is_valid_typst_syntax"
     ],
     "deny": [],
     "ask": []
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "Typst MCP Server",
     "julia-HelloWorld"
