@@ -7,9 +7,14 @@
       "Bash(Rscript -e:*)",
       "Skill(julia-hydrotools)",
       "Skill(r-expert)",
-      "WebSearch"
+      "WebSearch",
+      "mcp__julia-HelloWorld__get_time"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enabledMcpjsonServers": [
+    "Typst MCP Server",
+    "julia-HelloWorld"
+  ]
 }

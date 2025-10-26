@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "Typst MCP Server": {
+      "command": "C:\\ProgramData\\miniconda3\\Scripts\\uv.EXE",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "D:\\GitHub\\kongdd\\typst-mcp\\server.py"
+      ]
+    }
+  }
+}
