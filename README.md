@@ -60,6 +60,18 @@
 
 > **看能否创建出无数个自己的分身，拭目以待！**
 
-# References <!-- omit in toc -->
+
+## Citation <!-- omit in toc -->
 
 - Skills_for_Your_AI_Student: <https://github.com/kongdd/Skills_for_Your_AI_Student>
+
+
+## Reference <!-- omit in toc -->
+
+- Skills官方教程：<https://docs.claude.com/en/docs/claude-code/skills>
+
+- MCP官方教程：<https://docs.claude.com/en/docs/mcp>
+
+- 民间Skills：<https://github.com/K-Dense-AI/claude-scientific-skills>
+
+- 武装其他模型Skills：<https://github.com/K-Dense-AI/claude-skills-mcp>
