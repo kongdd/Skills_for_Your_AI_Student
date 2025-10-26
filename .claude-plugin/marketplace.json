@@ -1,0 +1,41 @@
+{
+  "name": "AI_Student_for_PhysicalGeography",
+  "owner": {
+    "name": "Dongdong Kong",
+    "email": "kongdd.sysu@gmail.com"
+  },
+  "metadata": {
+    "description": "AI Student for PhysicalGeography Researches",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "Hydrology",
+      "description": "水文学研究SKILLs",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/hydro-forecast/"
+      ]
+    }, 
+    {
+      "name": "Julia",
+      "description": "Julia模型编写与数据处理SKILLS",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/julia-hydrotools/", 
+        "./skills/julia-numerical/"
+      ]
+    },
+    {
+      "name": "Typst",
+      "description": "Typst文档编写SKILLS",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/typst-physica/"
+      ]
+    }
+  ]
+}
