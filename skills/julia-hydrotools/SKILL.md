@@ -1,32 +1,45 @@
 ---
 name: julia-hydrotools
-description: 计算短波辐射、长波辐射、潜在蒸散发、日出日落时间、湿度的基本变量处理。
+description: "Calculate shortwave/longwave radiation, potential evapotranspiration (PET/ET0), sunrise/sunset times, and humidity variables using Julia HydroTools. Use when computing meteorological or hydrological base variables, solar radiation, or evapotranspiration estimates."
 ---
 
-# 1 运行环境说明
+# Julia HydroTools Skill
 
-- 在Julia中运行
+## Runtime
 
-- 在julia中首先加载包，`using HydroTools`
+- Load: `using HydroTools`
+- Install if missing: `using Pkg; Pkg.add("HydroTools")`
 
-- 若没有包加载出错，则安装之，`using Pkg; Pkg.add("HydroTools")`
+## Key Functions
 
+### `cal_Rsi_toa(lat, J)` — Daily extraterrestrial radiation
 
-## 1.1 函数说明
+- `lat`: latitude in degrees (scalar)
+- `J`: day of year (scalar)
+- Returns: `MJ m⁻² day⁻¹`
+- For vectors, use broadcasting: `cal_Rsi_toa.(lat, J)`
+- Convert to W m⁻²: `MJ2W(value)`
 
-- `cal_Rsi_toa(lat, J)`: daily extraterrestrial radiation in MJ m-2 day-1
-  + `lat`: latitude in deg
-  + `J`: doy of year
-  > 注意lat和J是scalar
-  > 如果是vector，按照Julia的语法，采用`cal_Rsi_toa.(lat, J)`调用
-  + 默认返回单位是`MJ d-1`，若想转为`W m-2`，需要调用[MJ2W]函数，告诉用户返回的数字单位
+```julia
+using HydroTools, Dates
 
+lat = 20.0
+date = Date(2010, 6, 12)
+Rsi = cal_Rsi_toa(lat, dayofyear(date))  # MJ m⁻² day⁻¹
+Rsi_W = MJ2W(Rsi)                        # W m⁻²
+```
 
-## 1.2 文件保存
+### `HourAngleSunSet(lat, doy)` — Sunset hour angle
 
-文件保存采用Julia包`DataFrames`，`RTableTools`
+```julia
+ws = HourAngleSunSet(20.0, 120)
+```
+
+## File Saving
 
 ```julia
 using RTableTools
-fwrite(df, "out.csv") # df is a DataFrame
+fwrite(df, "out.csv")  # df is a DataFrame
 ```
+
+See `examples.jl` for a complete workflow with radiation and unit conversion.
